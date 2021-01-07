@@ -1,4 +1,4 @@
-# Instalación de ELK vía Ansile en Debian 10
+# Instalación de ELK vía Ansible en Debian 10
 
 ## Gestión de credenciales
 
