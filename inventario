@@ -1,0 +1,14 @@
+[elasticsearch]
+IP_MÁQUINA
+
+[logstash]
+IP_MÁQUINA
+
+[filebeat]
+IP_MÁQUINA
+
+[metricbeat]
+IP_MÁQUINA
+
+[kibana]
+IP_MÁQUINA
