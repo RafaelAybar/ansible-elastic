@@ -1,0 +1,11 @@
+---
+- name: Instalación de Elastic
+  hosts: all
+
+  tasks:
+    - name: Instalamos Elasticsearch
+      hosts: elasticsearch
+      apt:
+        name: elasticsearch
+        state: present
+        update_cache: yes

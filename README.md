@@ -1,13 +1,12 @@
 # Instalación de ELK vía Ansile en Debian 10
 
-
 ## Gestión de credenciales
 
+### 1. Configuración de SSH de la máquina a instalar la paquetería
 
-### 1. Generando claves SSH
-
-### 2. Configuración de SSH de la máquina donde se ejecutará Ansible
-
+### 2. Generando claves SSH
+1. Como primer paso generaremos nuestras claves con el comando `ssh-keygen`
+2. Cruzaremos las claves con el comando `ssh-copy-id`
 
 ## Definición del inventario
 
