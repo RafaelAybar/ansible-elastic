@@ -1,11 +1,20 @@
 ---
 - name: Instalación de Elastic
-  hosts: all
-
+  hosts: elasticsearch
   tasks:
     - name: Instalamos Elasticsearch
-      hosts: elasticsearch
       apt:
         name: elasticsearch
         state: present
         update_cache: yes
+
+    - name: Copia del fichero
+      ansible.builtin.copy:
+        src: elasticsearch.yml
+        dest: /etc/elasticsearch/elasticsearch.yml
+
+    - name: Reinicio del servicio
+      ansible.builtin.systemd:
+        state: restarted
+        daemon_reload: yes
+        name: elasticsearch
