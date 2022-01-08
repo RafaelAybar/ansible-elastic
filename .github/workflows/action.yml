@@ -1,11 +1,7 @@
-name: Build
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types: [opened, synchronize, reopened]
+on: [push]
 jobs:
   test:
-  - name: ansible-syntax-check-action
-   uses: Pablohn26/ansible-syntax-check-action@v1.0.0
+    name: test
+    steps:
+      - name: ansible-syntax-check-action
+        uses: Pablohn26/ansible-syntax-check-action@v1.0.0
